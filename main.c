@@ -5,6 +5,7 @@ int main(void){
         int is_number = FALSE;
         int reverse;
         int sort;
+	char binarized[MAX_SIZE];
         while(fgets(input, sizeof(input), stdin)!= NULL){
 
                 if(input[strlen(input)-1] == '\n')
@@ -25,6 +26,8 @@ int main(void){
                 if(is_number){
                         reverse = reverse_digits(atoi(input));
                         sort = sort_digits(atoi(input));
+			binarized = binarzied(atoi(input));
+			printf("%s\n", binarized);
                         printf("reverse> %d\nsort> %d\n",reverse, sort);
                 }
         }
