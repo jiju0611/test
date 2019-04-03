@@ -9,8 +9,8 @@
 #include <string.h>
 #include <ctype.h>
 #define MAX_SIZE 2048
-
+extern int position;
 int sort_digits(int n);
-
+char* binarized(int n);
 #endif
 
